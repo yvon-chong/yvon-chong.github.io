@@ -44,11 +44,6 @@ def pre_render():
             },
             "format": {
                 "html": {
-                    "description": description
-                }
-            },
-            "format": {
-                "html": {
                     "output-file": "index.html",
                     "header-includes": '\n'.join([f'<meta name="keywords" content="{keywords}">']),
                     "pagetitle": title,
