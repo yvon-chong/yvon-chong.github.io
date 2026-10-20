@@ -1,62 +1,55 @@
-# Jane Doe
-Data Analyst
-| [example@gmail.com](mailto:example@gmail.com)
-| [+254 777 777 777](tel:+254777777777)
-| [example.com](https://example.com)
-| [linkedin.com/in/janedoe](https://www2.linkedin.com/in/janedoe/)
+# Yvon Chong
 
-## About me
-Data-driven professional with a passion for uncovering insights from data to solve real-world business problems. Skilled in Python, SQL, and Tableau, with a strong background in statistical analysis. In my free time, I enjoy hiking and exploring new technology.
+yvon.chong@outlook.com · [linkedin.com/in/yv0n/](https://linkedin.com/in/yv0n) · [github.com/yvon-chong](https://github.com/yvon-chong)
 
-## Work Experience
+## Experience
 
-### Data Analyst, ABC Tech Solutions
-*January 2023 - Present*
+### Data Analyst · Max Higbee Center
+Bellingham, WA · 2023–Present
 
-- Utilize data analysis to optimize business operations and increase efficiency
-- Collaborate with cross-functional teams to develop predictive models
-- Lead data visualization projects to present findings to stakeholders
-
-### Junior Data Analyst, XYZ Corp
-*June 2021 - December 2022*
-
-- Assisted in cleaning and analyzing large datasets for business insights
-- Supported the development of dashboards for real-time business tracking
-- Provided actionable recommendations to improve marketing strategies
+- Evaluated analytical methods and technical procedures to inform program development.
+- Combined and linked data across disparate databases while maintaining confidentiality and security.
+- Created data visualizations and presented findings to executive leadership, board members, and stakeholders.
 
 ## Education
 
-### Bachelor of Science in Data Science  
-*University of Nairobi*  
-*2017 - 2021*
+### University of Washington
+B.Sc. in Chemical Engineering · Minor in Data Science  
 
-## Skills
+## Technical Skills
 
-- Data Analysis: Python, SQL, R
-- Visualization Tools: Tableau, PowerBI
-- Machine Learning: Scikit-learn, TensorFlow
-- Statistical Analysis: STATA, SPSS
+- Programming: Python, R, SQL, Bash
+- Data Analysis: pandas, NumPy, Microsoft Excel
+- Machine Learning: scikit-learn, XGBoost, PyTorch, TensorFlow/Keras
+- Visualization & Reporting: Matplotlib, seaborn, ggplot2, Quarto
+- Databases & Cloud: NoSQL, Azure Cosmos DB, Azure Functions
+- Development & Computing: Docker, Linux, CRUD APIs, high-performance computing (HPC)
 
-## Certifications
+## Selected Projects
 
-- Google Data Analytics Professional Certificate - 2022
-- Microsoft Certified: Azure Data Scientist Associate - 2021
+### Statistical Analysis of Northern Shrimp (*Pandalus borealis*)
+University of Washington · Quantitative Science Course Project · Winter 2025
 
-## Projects
+- Applied statistical methods to analyze northern shrimp survey data.
+- Communicated findings through interactive HTML reports and PDF documents using R and Quarto.
 
-### Sales Forecasting Model
-Developed a sales forecasting model using machine learning algorithms to predict future sales trends based on historical data.
+### Chemical Engineering Hackathon (C-Hack)
+Dow Chemical Company & University of Washington · Winter 2022
 
-### Customer Segmentation Analysis
-Conducted customer segmentation analysis using clustering techniques to enhance targeted marketing campaigns.
+- Cleaned and prepared real-world data using pandas.
+- Applied dimensionality reduction and K-means clustering using scikit-learn.
+- Created visualizations using seaborn to explore data and communicate findings.
 
-## Languages
+## Research & Technical Experience
 
-- English: Fluent
-- Swahili: Native
+### Undergraduate Research Fellow (REU)
+Molecular Engineering Materials Center (MEM-C), University of Washington · Summer 2021  
+Supported by NSF Grant DMR-179797
 
-## Interests
+- Modeled vacancy diffusion in diamond using kinetic lattice Monte Carlo simulations.
+- Communicated research methods and findings to a variety of audiences.
 
-- Hiking
-- Technology
-- Photography
+### Chemical Engineering Study Abroad
+Technical University of Denmark (DTU) · Lyngby, Denmark · Summer 2022
+
+- Completed large-scale practical exercises in process technology and chemical unit operations.
