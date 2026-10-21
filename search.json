@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yvon Chong",
+    "section": "",
+    "text": "yvon.chong@outlook.com · linkedin.com/in/yv0n/ · github.com/yvon-chong\n\n\n\n\nBellingham, WA · 2023–Present\n\nEvaluated analytical methods and technical procedures to inform program development.\nCombined and linked data across disparate databases while maintaining confidentiality and security.\nCreated data visualizations and presented findings to executive leadership, board members, and stakeholders.\n\n\n\n\n\n\n\nB.Sc. in Chemical Engineering · Minor in Data Science\n\n\n\n\n\nProgramming: Python, R, SQL, Bash\nData Analysis: pandas, NumPy, Microsoft Excel\nMachine Learning: scikit-learn, XGBoost, PyTorch, TensorFlow/Keras\nVisualization & Reporting: Matplotlib, seaborn, ggplot2, Quarto\nDatabases & Cloud: NoSQL, Azure Cosmos DB, Azure Functions\nDevelopment & Computing: Docker, Linux, CRUD APIs, high-performance computing (HPC)\n\n\n\n\n\n\nUniversity of Washington · Quantitative Science Course Project · Winter 2025\n\nApplied statistical methods to analyze northern shrimp survey data.\nCommunicated findings through interactive HTML reports and PDF documents using R and Quarto.\n\n\n\n\nDow Chemical Company & University of Washington · Winter 2022\n\nCleaned and prepared real-world data using pandas.\nApplied dimensionality reduction and K-means clustering using scikit-learn.\nCreated visualizations using seaborn to explore data and communicate findings.\n\n\n\n\n\n\n\nMolecular Engineering Materials Center (MEM-C), University of Washington · Summer 2021\nSupported by NSF Grant DMR-179797\n\nModeled vacancy diffusion in diamond using kinetic lattice Monte Carlo simulations.\nCommunicated research methods and findings to a variety of audiences.\n\n\n\n\nTechnical University of Denmark (DTU) · Lyngby, Denmark · Summer 2022\n\nCompleted large-scale practical exercises in process technology and chemical unit operations."
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Yvon Chong",
+    "section": "",
+    "text": "Bellingham, WA · 2023–Present\n\nEvaluated analytical methods and technical procedures to inform program development.\nCombined and linked data across disparate databases while maintaining confidentiality and security.\nCreated data visualizations and presented findings to executive leadership, board members, and stakeholders."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Yvon Chong",
+    "section": "",
+    "text": "B.Sc. in Chemical Engineering · Minor in Data Science"
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Yvon Chong",
+    "section": "",
+    "text": "Programming: Python, R, SQL, Bash\nData Analysis: pandas, NumPy, Microsoft Excel\nMachine Learning: scikit-learn, XGBoost, PyTorch, TensorFlow/Keras\nVisualization & Reporting: Matplotlib, seaborn, ggplot2, Quarto\nDatabases & Cloud: NoSQL, Azure Cosmos DB, Azure Functions\nDevelopment & Computing: Docker, Linux, CRUD APIs, high-performance computing (HPC)"
+  },
+  {
+    "objectID": "index.html#selected-projects",
+    "href": "index.html#selected-projects",
+    "title": "Yvon Chong",
+    "section": "",
+    "text": "University of Washington · Quantitative Science Course Project · Winter 2025\n\nApplied statistical methods to analyze northern shrimp survey data.\nCommunicated findings through interactive HTML reports and PDF documents using R and Quarto.\n\n\n\n\nDow Chemical Company & University of Washington · Winter 2022\n\nCleaned and prepared real-world data using pandas.\nApplied dimensionality reduction and K-means clustering using scikit-learn.\nCreated visualizations using seaborn to explore data and communicate findings."
+  },
+  {
+    "objectID": "index.html#research-technical-experience",
+    "href": "index.html#research-technical-experience",
+    "title": "Yvon Chong",
+    "section": "",
+    "text": "Molecular Engineering Materials Center (MEM-C), University of Washington · Summer 2021\nSupported by NSF Grant DMR-179797\n\nModeled vacancy diffusion in diamond using kinetic lattice Monte Carlo simulations.\nCommunicated research methods and findings to a variety of audiences.\n\n\n\n\nTechnical University of Denmark (DTU) · Lyngby, Denmark · Summer 2022\n\nCompleted large-scale practical exercises in process technology and chemical unit operations."
+  }
+]
