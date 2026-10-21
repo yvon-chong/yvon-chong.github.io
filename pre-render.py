@@ -1,72 +1,111 @@
 import json
-import yaml
 from urllib.parse import urlparse
 
+import yaml
+
+
 DEFAULT_TEXT_VAR = "Quarto Resume"
+
 
 def clean_domain(url):
     if not url:
         return None
+
     parsed_url = urlparse(url)
     domain = parsed_url.netloc
-    # Remove 'www.' if present
-    if domain.startswith('www.'):
+
+    if domain.startswith("www."):
         domain = domain[4:]
-    return domain
+
+    return domain or None
+
 
 def pre_render():
-    # Convert RESUME.json to _variables.yml
-    with open('RESUME.json', 'r', encoding='utf-8') as json_file:
+    with open("RESUME.json", "r", encoding="utf-8") as json_file:
         meta_data = json.load(json_file)
-    
-    with open('_quarto-development.yml', 'w', encoding='utf-8') as yaml_file:
-        google_analytics = meta_data.get("google-analytics", None)
-        title = meta_data.get("title", "Resume")
-        custom_domain = clean_domain(meta_data.get('custom-domain', None))
-        secondary_email = meta_data.get('secondary-email', None)
-        description = meta_data.get('description', DEFAULT_TEXT_VAR)
-        keywords = ', '.join(
-    value
-    for value in [secondary_email, custom_domain, DEFAULT_TEXT_VAR]
-    if value
-)
-        development_profile = {
-            "website": {
-                "site-url": custom_domain,
-                "page-footer": {
-                    "center": [
-                        {
-                            "text": secondary_email,
-                            "href": f"mailto:{secondary_email}"
-                        },
-                        {
-                            "text": "<i>Create your resume</i>",
-                            "href": "https://toknow.ai/posts/quarto-resume-template/"
-                        },
-                    ]
-                },
-            },
-            "format": {
-                "html": {
-                    "output-file": "index.html",
-                    "header-includes": '\n'.join([f'<meta name="keywords" content="{keywords}">']),
-                    "pagetitle": title,
-                },
-                "pdf": {
-                    "output-file": "index.pdf"
-                }
+
+    google_analytics = meta_data.get("google-analytics")
+    title = meta_data.get("title") or "Resume"
+    custom_domain = clean_domain(meta_data.get("custom-domain"))
+    secondary_email = meta_data.get("secondary-email")
+    description = meta_data.get("description") or DEFAULT_TEXT_VAR
+
+    keywords = ", ".join(
+        value
+        for value in [
+            secondary_email,
+            custom_domain,
+            DEFAULT_TEXT_VAR,
+        ]
+        if isinstance(value, str) and value
+    )
+
+    footer_items = []
+
+    if secondary_email:
+        footer_items.append(
+            {
+                "text": secondary_email,
+                "href": f"mailto:{secondary_email}",
             }
+        )
+
+    footer_items.append(
+        {
+            "text": "<i>Create your resume</i>",
+            "href": "https://toknow.ai/posts/quarto-resume-template/",
         }
-        if google_analytics:
-            development_profile["website"]["google-analytics"] = google_analytics
-        yaml.dump(development_profile, yaml_file, default_flow_style=False, encoding='utf-8')
+    )
+
+    development_profile = {
+        "website": {
+            "page-footer": {
+                "center": footer_items,
+            },
+        },
+        "format": {
+            "html": {
+                "description": description,
+                "output-file": "index.html",
+                "header-includes": (
+                    f'<meta name="keywords" content="{keywords}">'
+                ),
+                "pagetitle": title,
+            },
+            "pdf": {
+                "output-file": "index.pdf",
+            },
+        },
+    }
+
+    if custom_domain:
+        development_profile["website"]["site-url"] = (
+            f"https://{custom_domain}"
+        )
+
+    if google_analytics:
+        development_profile["website"]["google-analytics"] = (
+            google_analytics
+        )
+
+    with open(
+        "_quarto-development.yml", "w", encoding="utf-8"
+    ) as yaml_file:
+        yaml.safe_dump(
+            development_profile,
+            yaml_file,
+            default_flow_style=False,
+            allow_unicode=True,
+        )
+
     print("Created _quarto-development.yml from RESUME.json")
 
-    # Check for custom-domain and create CNAME file if it exists
     if custom_domain:
-        with open('CNAME', 'w') as cname_file:
+        with open("CNAME", "w", encoding="utf-8") as cname_file:
             cname_file.write(custom_domain)
+
         print(f"Created CNAME file with domain: {custom_domain}")
+
 
 if __name__ == "__main__":
     pre_render()
